@@ -18,7 +18,7 @@
     <link rel="alternative" href="/atom.xml" title="詹增锦个人博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.b3331d.css">
   <style type="text/css">
@@ -160,6 +160,162 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-第二篇技术文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/16/第二篇技术文章/">第二篇技术文章</a>
+    </h1>
+  
+
+        
+        <a href="/2017/05/16/第二篇技术文章/" class="archive-article-date">
+  	<time datetime="2017-05-16T15:30:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="2-客户端专用接口公共请求参数"><a href="#2-客户端专用接口公共请求参数" class="headerlink" title="2.客户端专用接口公共请求参数"></a>2.客户端专用接口公共请求参数</h4><blockquote>
+<p>本协议的所有请求中， <strong><em>没有特别的说明</em></strong> ，所有的客户端专用接口都需要带上以下参数，<strong><em>非跨域情况下</em></strong> ，不管是 <strong><em>GET</em></strong> 请求还是 <strong><em>POST</em></strong> 请求，都需要在 <strong><em>Header</em></strong> 中带上这些参数。 <strong><em>在AJAX跨域请求情况下</em></strong> ，由于AJAX跨域请求对自定义 <strong><em>header</em></strong> 的支持很不友好，因此在这种情况下，将以下的公共参数封装成一个 <strong><em>JSON</em></strong> 并赋值给参数 <strong><em>comm_params</em></strong> 在 <strong><em>POST</em></strong> 或者 <strong><em>GET</em></strong> 请求中传输（<em>如果请求是 GET，则 comm_params 放在 GET 参数中，如果请求是 POST ，则 comm_params 放在 POST 参数中，comm_params 的值需要做一次 urlencode</em>）</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>非空约束</th>
+<th>备注说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>device</td>
+<td>string</td>
+<td>O</td>
+<td>客户端设备相关信息，包含：系统信息(sys)、版本号(ver)、IP地址(ip)、设备类型(devtype)，其中设备类型(devtype)包含：1-H5、2-PC、4-微信、8-andriod、16-IOS，数据格式如： sys=mx10&amp;ver=1.0&amp;ip=127.0.0.1&amp;devtype=1</td>
+</tr>
+<tr>
+<td>plat</td>
+<td>string</td>
+<td>M</td>
+<td>系统平台编号，统一分配，见 <a href="系统平台编号分配">系统平台编号分配</a></td>
+</tr>
+<tr>
+<td>reqid</td>
+<td>string</td>
+<td>M</td>
+<td>请求ID，各保证每个请求该参数的唯一性，可使用当前时间的UNIX时间戳生成（精确到秒）</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>string</td>
+<td>M</td>
+<td>签名数据信息，签名方式见 <a href="统一账号权限系统·请求签名鉴权">请求签名鉴权</a></td>
+</tr>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>C</td>
+<td>登陆token，未登陆的用户可空，已用登陆态的非空</td>
+</tr>
+<tr>
+<td>ts</td>
+<td>number</td>
+<td>M</td>
+<td>请求发起的时间，UNIX时间戳格式，精确到秒，该值请正确传输</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/05/16/第二篇技术文章/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-page" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/16/page/">第二篇博客</a>
+    </h1>
+  
+
+        
+        <a href="/2017/05/16/page/" class="archive-article-date">
+  	<time datetime="2017-05-16T15:29:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/05/16/page/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
   
     <article id="post-第一篇技术博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
